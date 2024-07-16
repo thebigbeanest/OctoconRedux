@@ -1,4 +1,4 @@
-/* Screenshots and Videos */
+
 .screenshots,
 .videos {
     display: flex;
@@ -31,7 +31,7 @@
     transform: scale(1.05);
 }
 
-/* Modal */
+
 .modal {
     display: none;
     position: fixed;
@@ -70,7 +70,7 @@
     text-decoration: none;
 }
 
-/* Announcements and Events */
+
 .announcement,
 .event {
     background-color: #2c2f33;
@@ -92,8 +92,6 @@
     font-size: 1.3em;
 }
 
-
-/* Media Settings*/
 
 .media-section {
     margin-bottom: 40px;
@@ -146,6 +144,7 @@
     margin: 0;
     font-size: 0.9em;
 }
+
 .modal {
     display: none;
     position: fixed;
@@ -176,4 +175,19 @@
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .screenshot,
+    .video {
+        width: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .screenshot,
+    .video {
+        width: calc(100% - 20px); 
+    }
 }
